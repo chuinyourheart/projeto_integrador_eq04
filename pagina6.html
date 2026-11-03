@@ -11,6 +11,7 @@
   <!-- Cabeçalho !-->
 
   <header>
+
       <h1><i>Cultura de Paz</i></h1>
     
       <!-- Botão de Acessibilidade !-->
@@ -37,19 +38,73 @@
 
   <article>
 
-<!-- Secção 5: Soluções !-->
+        <!-- Secção 6: Dados Quantitativos (Requisito Item 7 do Guia) !-->
 
-       <section id="solucoes">
-          <h4>Soluções proporcionadas pela Cultura da Paz</h4>
-          <ul>
-              <li><b><i>Resolução Pacífica de Conflitos</i></b></li>
-              <li><b><i>Melhora do Ambiente Escolar e Social</i></b></li>
-              <li><b><i>Fortalecimento de Vínculos Comunitários</i></b></li>
-              <li><b><i>Educação para Cidadania</i></b></li>
-              <li><b><i>Prevenção da Violência</i></b></li>
-              <li><b><i>Desenvolvimento de Habilidades Socioemocionais</i></b></li>
-          </ul>
+        <section id="dados-quantitativos" aria-labelledby="titulo-dados">
+          <h3 id="titulo-dados">Dados e Estatísticas</h3>
+          <p id="dado-destaque">Clique no botão abaixo para carregar dados estatísticos sobre a Cultura de Paz.</p>
+          <button type="button" id="mostrar-dado">Mostrar dado estatístico</button>
       </section>
+
+      <!-- Secção 7: Formulário de Avaliação da Página (Item 5 do Guia) !-->
+
+      <section aria-labelledby="titulo-avaliacao">
+
+          <h3 id="titulo-avaliacao">Avalie esta página</h3>
+          <form id="form-avaliacao" novalidate>
+              <label for="clareza">As informações foram claras?</label>
+              <select id="clareza" name="clareza" required>
+                  <option value="">Selecione</option>
+                  <option value="sim">Sim</option>
+                  <option value="parcialmente">Parcialmente</option>
+                  <option value="nao">Não</option>
+              </select>
+
+              <label for="nota">Facilidade de navegação (1 a 5):</label>
+              <input id="nota" name="nota" type="number" min="1" max="5" required>
+
+              <label for="sugestao">O que poderia melhorar?</label>
+              <textarea id="sugestao" name="sugestao" rows="4" maxlength="500"></textarea>
+
+              <button type="submit">Conferir avaliação</button>
+              <p id="resultado-avaliacao" role="status" aria-live="polite"></p>
+          </form>
+
+      </section>
+
+      <!-- Secção 8: Formulário de Relato Anónimo (Item 6 do Guia) !-->
+
+      <section aria-labelledby="titulo-relato">
+
+          <h3 id="titulo-relato">Registrar um relato de teste</h3>
+          <p>Use somente situações fictícias nesta versão de laboratório.</p>
+          <form id="form-relato" novalidate>
+              <label for="categoria">Categoria:</label>
+              <select id="categoria" name="categoria" required>
+                  <option value="">Selecione</option>
+                  <option value="convivencia">Convivência</option>
+                  <option value="ambiente-digital">Ambiente digital</option>
+              </select>
+
+              <label for="descricao">Descreva a situação fictícia (mínimo 20 caracteres):</label>
+              <textarea id="descricao" name="descricao" rows="5" maxlength="1000" required></textarea>
+
+              <label for="sugestao-relato">Sugestão de encaminhamento:</label>
+              <textarea id="sugestao-relato" name="sugestao" rows="3" maxlength="500"></textarea>
+
+              <button type="submit">Conferir relato</button>
+              <p id="resultado-relato" role="status" aria-live="polite"></p>
+          </form>
+      </section>
+
+      <!-- Secção 9: Saiba mais !-->
+
+      <section id="saiba-mais">
+
+          <h4><i>Saiba mais!</i></h4>
+          <a href="https://www.ufrgs.br/das/wp-content/uploads/2022/04/Cartilha-Cultura-de-PAZ-Versao-Final-Revisada-e-Ajustada-06.04.2022.pdf" target="_blank" rel="noopener noreferrer">Acesse para mais Informações!</a>
+      
+        </section>
 
   </article>
 
