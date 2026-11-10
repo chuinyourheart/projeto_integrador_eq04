@@ -1,114 +1,120 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paz em Pauta</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Paz em Pauta</title>
+ <link rel="stylesheet" href="style.css">
+ <script src="script.js" defer></script>
 </head>
 <body>
+  
+
+ <!-- Cabeçalho !-->
+
+ <header>
+
+     <h1><i>Cultura de Paz</i></h1>
+
+
+     <!-- Botão de Acessibilidade !-->
+
+
+     <div class="acessibilidade-container">
+         <button type="button" id="botao-fonte" aria-pressed="false">Ampliar texto</button>
+     </div>
+
+     <!-- Menu de Navegação !-->
+
+     <nav>
+         <ul>
+             <li><a href="index.html">Início</a></li>
+
+             <li><a href="pagina1.html">O que é?</a></li>
+             <li><a href="pagina2.html">Principais Pilares</a></li>
+             <li><a href="pagina3.html">Importância</a></li>
+             <li><a href="pagina4.html">Impactos</a></li>
+             <li><a href="pagina5.html">Soluções</a></li>
+             <li><a href="pagina6.html">Saiba mais!</a></li>
+         </ul>
+     </nav>
+ </header>
+
+ <article>
+
+
+       <!-- Dados Quantitativos !-->
+
+       <section id="dados-quantitativos" aria-labelledby="titulo-dados">
+         <h3 id="titulo-dados">Dados e Estatísticas</h3>
+         <p id="dado-destaque">Clique no botão abaixo para carregar dados estatísticos sobre a Cultura de Paz.</p>
+         <button type="button" id="mostrar-dado">Mostrar dado estatístico</button>
+     </section>
+
+
+     <!-- Secção 7: Formulário de Avaliação da Página !-->
+
+     <section aria-labelledby="titulo-avaliacao">
+
+         <h3 id="titulo-avaliacao">Avalie esta página</h3>
+         <form id="form-avaliacao" novalidate>
+             <label for="clareza">As informações foram claras?</label>
+             <select id="clareza" name="clareza" required>
+                 <option value="">Selecione</option>
+                 <option value="sim">Sim</option>
+                 <option value="parcialmente">Parcialmente</option>
+                 <option value="nao">Não</option>
+             </select>
+
+             <label for="nota">Facilidade de navegação (1 a 5):</label>
+             <input id="nota" name="nota" type="number" min="1" max="5" required>
+
+             <label for="sugestao">O que poderia melhorar?</label>
+             <textarea id="sugestao" name="sugestao" rows="4" maxlength="500"></textarea>
+
+             <button type="submit">Conferir avaliação</button>
+             <p id="resultado-avaliacao" role="status" aria-live="polite"></p>
+         </form>
+
+     </section>
+
+
+     <!-- Formulário de Relato Anónimo !-->
+
+     <section aria-labelledby="titulo-relato">
+
+         <h3 id="titulo-relato">Registrar um relato de teste</h3>
+         <p>Use somente situações fictícias nesta versão de laboratório.</p>
+         <form id="form-relato" novalidate>
+             <label for="categoria">Categoria:</label>
+             <select id="categoria" name="categoria" required>
+                 <option value="">Selecione</option>
+                 <option value="convivencia">Convivência</option>
+                 <option value="ambiente-digital">Ambiente digital</option>
+             </select>
+
+             <label for="descricao">Descreva a situação fictícia:</label>
+             <textarea id="descricao" name="descricao" rows="5" maxlength="1000" required></textarea>
+
+             <label for="sugestao-relato">Sugestão de encaminhamento:</label>
+             <textarea id="sugestao-relato" name="sugestao" rows="3" maxlength="500"></textarea>
+
+             <button type="submit">Conferir relato</button>
+             <p id="resultado-relato" role="status" aria-live="polite"></p>
+         </form>
+     </section>
+
+
+     <!-- Saiba mais !-->
+
+     <section id="saiba-mais">
+
+         <h4><i>Saiba mais!</i></h4>
+         <a href="https://www.ufrgs.br/das/wp-content/uploads/2022/04/Cartilha-Cultura-de-PAZ-Versao-Final-Revisada-e-Ajustada-06.04.2022.pdf" target="_blank" rel="noopener noreferrer">Acesse para mais Informações!</a>
     
-  <!-- Cabeçalho !-->
+       </section>
 
-  <header>
-
-      <h1><i>Cultura de Paz</i></h1>
-    
-      <!-- Botão de Acessibilidade !-->
-
-      <div class="acessibilidade-container">
-          <button type="button" id="botao-fonte" aria-pressed="false">Ampliar texto</button>
-      </div>
-
-      <!-- Menu de Navegação !-->
-
-      <nav>
-          <ul>
-              <li><a href="index.html">Início</a></li>
-
-              <li><a href="pagina1.html">O que é?</a></li>
-              <li><a href="pagina2.html">Principais Pilares</a></li>
-              <li><a href="pagina3.html">Importância</a></li>
-              <li><a href="pagina4.html">Impactos</a></li>
-              <li><a href="pagina5.html">Soluções</a></li>
-              <li><a href="pagina6.html">Saiba mais!</a></li>
-          </ul>
-      </nav>
-  </header>
-
-  <article>
-
-        <!-- Dados Quantitativos !-->
-
-        <section id="dados-quantitativos" aria-labelledby="titulo-dados">
-          <h3 id="titulo-dados">Dados e Estatísticas</h3>
-          <p id="dado-destaque">Clique no botão abaixo para carregar dados estatísticos sobre a Cultura de Paz.</p>
-          <button type="button" id="mostrar-dado">Mostrar dado estatístico</button>
-      </section>
-
-      <!-- Secção 7: Formulário de Avaliação da Página !-->
-
-      <section aria-labelledby="titulo-avaliacao">
-
-          <h3 id="titulo-avaliacao">Avalie esta página</h3>
-          <form id="form-avaliacao" novalidate>
-              <label for="clareza">As informações foram claras?</label>
-              <select id="clareza" name="clareza" required>
-                  <option value="">Selecione</option>
-                  <option value="sim">Sim</option>
-                  <option value="parcialmente">Parcialmente</option>
-                  <option value="nao">Não</option>
-              </select>
-
-              <label for="nota">Facilidade de navegação (1 a 5):</label>
-              <input id="nota" name="nota" type="number" min="1" max="5" required>
-
-              <label for="sugestao">O que poderia melhorar?</label>
-              <textarea id="sugestao" name="sugestao" rows="4" maxlength="500"></textarea>
-
-              <button type="submit">Conferir avaliação</button>
-              <p id="resultado-avaliacao" role="status" aria-live="polite"></p>
-          </form>
-
-      </section>
-
-      <!-- Formulário de Relato Anónimo !-->
-
-      <section aria-labelledby="titulo-relato">
-
-          <h3 id="titulo-relato">Registrar um relato de teste</h3>
-          <p>Use somente situações fictícias nesta versão de laboratório.</p>
-          <form id="form-relato" novalidate>
-              <label for="categoria">Categoria:</label>
-              <select id="categoria" name="categoria" required>
-                  <option value="">Selecione</option>
-                  <option value="convivencia">Convivência</option>
-                  <option value="ambiente-digital">Ambiente digital</option>
-              </select>
-
-              <label for="descricao">Descreva a situação fictícia (mínimo 20 caracteres):</label>
-              <textarea id="descricao" name="descricao" rows="5" maxlength="1000" required></textarea>
-
-              <label for="sugestao-relato">Sugestão de encaminhamento:</label>
-              <textarea id="sugestao-relato" name="sugestao" rows="3" maxlength="500"></textarea>
-
-              <button type="submit">Conferir relato</button>
-              <p id="resultado-relato" role="status" aria-live="polite"></p>
-          </form>
-      </section>
-
-
-      <!-- Saiba mais !-->
-
-      <section id="saiba-mais">
-
-          <h4><i>Saiba mais!</i></h4>
-          <a href="https://www.ufrgs.br/das/wp-content/uploads/2022/04/Cartilha-Cultura-de-PAZ-Versao-Final-Revisada-e-Ajustada-06.04.2022.pdf" target="_blank" rel="noopener noreferrer">Acesse para mais Informações!</a>
-      
-        </section>
-
-  </article>
+ </article>
 
 </body>
 </html>
